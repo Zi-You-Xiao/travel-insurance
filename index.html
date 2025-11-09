@@ -9,15 +9,15 @@
   <div class="container">
     <h1>個人旅平險試算</h1>
 
-    <form id="insurance-form">
+    <form >
       <label>
         年齡：
-        <input type="number" id="age" placeholder="請輸入年齡">
+        <input type="number"  placeholder="請輸入年齡">
       </label>
 
       <label>
         目的地：
-        <select id="destination">
+        <select >
           <option value="Domestic">國內</option>
           <option value="International">國外</option>
         </select>
@@ -25,12 +25,12 @@
 
       <label>
         出行天數：
-        <input type="number" id="days" placeholder="天數">
+        <input type="number"  placeholder="天數">
       </label>
 
       <label>
         不便險方案：
-        <select id="coverage">
+        <select>
           <option value="chose" selected>請選擇方案</option>
           <option value="basic">基本型</option>
           <option value="standard">超值型</option>
@@ -60,15 +60,14 @@
         </select>
       </label>
 
-      <button type="button" id="calculate">開始試算</button>
+      <button type="button">開始試算</button>
     </form>
 
-    <div id="result">
+    <div>
       <h2>試算結果</h2>
-      <p id="premium">請輸入資料並點擊「開始試算」</p>
+      <p>請輸入資料並點擊「開始試算」</p>
     </div>
   </div>
 
-  <script src="script.js"></script>
 </body>
 </html>
