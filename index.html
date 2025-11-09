@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>個人旅平險試算</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>個人旅平險試算</h1>
+
+    <form id="insurance-form">
+      <label>
+        年齡：
+        <input type="number" id="age" placeholder="請輸入年齡">
+      </label>
+
+      <label>
+        目的地：
+        <select id="destination">
+          <option value="Domestic">國內</option>
+          <option value="International">國外</option>
+        </select>
+      </label>
+
+      <label>
+        出行天數：
+        <input type="number" id="days" placeholder="天數">
+      </label>
+
+      <label>
+        不便險方案：
+        <select id="coverage">
+          <option value="chose" selected>請選擇方案</option>
+          <option value="basic">基本型</option>
+          <option value="standard">超值型</option>
+          <option value="no" >無</option>
+        </select>
+      </label>
+
+       <label>
+        旅平險保額：
+        <select>
+          <option selected>請選擇身故失能保額</option>
+          <option >100萬</option>
+          <option >200萬</option>
+          <option >300萬</option>
+        </select>
+        <select>
+          <option selected>請選擇傷害醫療保額</option>
+          <option >10萬</option>
+          <option >20萬</option>
+          <option >30萬</option>
+        </select>
+        <select>
+          <option selected>請選擇海外突發疾病保額</option>
+          <option >10萬</option>
+          <option >20萬</option>
+          <option >30萬</option>
+        </select>
+      </label>
+
+      <button type="button" id="calculate">開始試算</button>
+    </form>
+
+    <div id="result">
+      <h2>試算結果</h2>
+      <p id="premium">請輸入資料並點擊「開始試算」</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
